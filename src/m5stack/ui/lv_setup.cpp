@@ -1,9 +1,11 @@
 
 #include <Arduino.h>
-#ifdef M5UNIFIED
-#include <M5Unified.h>
-#else
+#if defined(ARDUINO_M5STACK_Core2)
 #include <M5Core2.h>
+#endif
+#if defined(ARDUINO_M5STACK_CORES3)
+// #include <M5CoreS3.h>
+#include <M5Unified.h>
 #endif
 #include <lvgl.h>
 
@@ -32,7 +34,26 @@ static void my_disp_flush(lv_disp_drv_t *disp, const lv_area_t *area, lv_color_t
 static void my_touchpad_read(lv_indev_drv_t *indev_driver, lv_indev_data_t *data)
 {
     uint16_t touchX = 0, touchY = 0;
-
+#ifdef M5UNIFIED
+    M5.update();
+    auto count = M5.Touch.getCount();
+    if (!count) {
+        data->state = LV_INDEV_STATE_REL;
+        return;
+    }
+    auto t = M5.Touch.getDetail();
+    if (t.wasPressed())  {
+        data->state = LV_INDEV_STATE_PR;
+        /*Set the coordinates*/
+        data->point.x = t.x;
+        data->point.y = t.y;
+        // Serial.println("x: " + String(data->point.x) + " y: " + String(data->point.y));
+    }
+    else
+    {
+        data->state = LV_INDEV_STATE_REL;
+    }
+#else
     bool touched = M5.Lcd.getTouch(&touchX, &touchY, 600);
     if (M5.Lcd.getTouch(&touchX, &touchY, 600))
     {
@@ -46,6 +67,7 @@ static void my_touchpad_read(lv_indev_drv_t *indev_driver, lv_indev_data_t *data
     {
         data->state = LV_INDEV_STATE_REL;
     }
+#endif
 }
 
 /* Setup lvgl with display and touch pad */
