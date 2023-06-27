@@ -13,6 +13,9 @@ void time_init()
     strptime(timeDate.c_str(), "%H:%M:%S %b %d %Y", &timeinfo);
     Serial.println("Time set to: " + timeDate);
 
+    // see https://github.com/m5stack/M5Unified/blob/master/src/utility/RTC8563_Class.cpp#L274A 
+    tzset(); // Workaround for https://github.com/espressif/esp-idf/issues/11455
+
     // Convert tm struct to epoch time
     timeval tv = {
         .tv_sec = mktime(&timeinfo),
