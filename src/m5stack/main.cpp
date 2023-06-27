@@ -6,6 +6,7 @@
 // #include <M5CoreS3.h>  // no touch support yet
 #include <M5Unified.h>
 #endif
+#include <FS.h>
 
 #include "time_func.h"
 #include "ui/lv_setup.h"
