@@ -7,3 +7,9 @@
 [submodule "lib/TFT_eSPI"]
 	path = lib/TFT_eSPI
 	url = https://github.com/mhaberler/TFT_eSPI.git
+[submodule "lib/Arduino_GFX"]
+	path = lib/Arduino_GFX
+	url = https://github.com/mhaberler/Arduino_GFX.git
+[submodule "lib/gt911-arduino"]
+	path = lib/gt911-arduino
+	url = https://github.com/mhaberler/gt911-arduino.git
