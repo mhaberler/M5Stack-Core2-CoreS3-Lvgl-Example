@@ -1,7 +1,7 @@
 #include <lvgl.h>
 #include <Arduino_GFX_Library.h>
-#include "ui.h"
-#include "ui_helpers.h"
+#include "ui/ui.h"
+#include "ui/ui_helpers.h"
 
 // setting PWM properties
 const int freq = 5000;
