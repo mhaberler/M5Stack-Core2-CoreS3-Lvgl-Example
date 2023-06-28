@@ -9,7 +9,8 @@
     "extra_flags": [
       "-DBOARD_HAS_PSRAM",
       "-DARDUINO_ESP32S3_SUNTON",
-      "-DESP32S3"
+      "-DESP32S3",
+      "-DARDUINO_USB_MODE=1"
     ],
     "f_cpu": "240000000L",
     "f_flash": "80000000L",
