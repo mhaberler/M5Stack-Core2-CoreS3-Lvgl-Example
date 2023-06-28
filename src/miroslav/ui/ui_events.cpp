@@ -6,5 +6,5 @@
 
 void logoPressed(lv_event_t *e)
 {
-	Serial.println("Logo pressed");
+	// Serial.println("Logo pressed");
 }
