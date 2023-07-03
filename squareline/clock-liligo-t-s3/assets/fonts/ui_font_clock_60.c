@@ -4,7 +4,7 @@
  * Opts: --bpp 8 --size 60 --font C:\Projects\01-Current\LVGL\T-Display-S3-Lvgl-Example\ui_square_line\assets\fonts\FuturaStdCondensedLightObl.otf -o C:\Projects\01-Current\LVGL\T-Display-S3-Lvgl-Example\ui_square_line\assets\fonts\ui_font_clock_60.c --format lvgl -r 0x20-0x7f --no-compress --no-prefilter
  ******************************************************************************/
 
-#include "ui.h"
+#include "../ui.h"
 
 #ifndef UI_FONT_CLOCK_60
 #define UI_FONT_CLOCK_60 1

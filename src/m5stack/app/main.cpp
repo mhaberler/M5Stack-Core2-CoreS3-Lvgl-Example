@@ -24,4 +24,4 @@ void loop() {
   update_time(); // Update time and date on UI
 }
 
-void logoPressed(lv_event_t *e) { Serial.println("logo pressed"); }
+void logoPressed(lv_event_t *e) { Serial.println("Logo pressed"); }

@@ -1,7 +1,7 @@
+#include "lv_setup.h"
 #include "pin_config.h"
 #include "time_func.h"
-#include "ui/lv_setup.h"
-#include "ui/ui.h"
+#include "ui.h"
 #include <Arduino.h>
 
 void setup() {
@@ -14,3 +14,5 @@ void loop() {
   lv_handler();  // Update UI
   update_time(); // Update time and date on UI
 }
+
+void logoPressed(lv_event_t *e) { Serial.println("Logo pressed"); }

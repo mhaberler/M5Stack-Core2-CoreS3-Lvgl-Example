@@ -3,7 +3,7 @@
 #include <TFT_eSPI.h>
 #include <lvgl.h>
 #include "lv_setup.h"
-#include "../pin_config.h"
+#include "pin_config.h"
 
 /* Screen dimensions */
 #define LV_SCREEN_WIDTH 320

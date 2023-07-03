@@ -1552,7 +1552,8 @@
             "InheritedType": 11
           }
         ],
-        "saved_objtypeKey": "SCREEN"
+        "saved_objtypeKey": "SCREEN",
+        "tree_closed": true
       }
     ],
     "locked": false,
@@ -1588,9 +1589,9 @@
     "theme_dark": false,
     "theme_color1": 5,
     "theme_color2": 0,
-    "exportFolderPath": "/Users/mah/Ballon/src/BalloonWare/graphics/squareline-esp32/src/m5stack/ui",
-    "projectExportFolderPath": "/Users/mah/Ballon/src/BalloonWare/graphics/squareline-esp32/squareline/projects/ui_square_line",
-    "backup_cnt": 13,
+    "exportFolderPath": "/Users/mah/Ballon/src/BalloonWare/graphics/squareline-esp32/src/m5stack/clock/ui",
+    "projectExportFolderPath": "/Users/mah/Ballon/src/BalloonWare/graphics/squareline-esp32/squareline/clock-m5stack",
+    "backup_cnt": 14,
     "autosave_cnt": 0,
     "lvgl_version": "8.2.0",
     "callfuncsexport": "DONT_EXPORT",

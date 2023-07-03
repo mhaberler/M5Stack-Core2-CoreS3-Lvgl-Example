@@ -1,7 +1,7 @@
 #pragma once
 
 #include <Arduino.h>
-#include "ui/ui.h"
+#include "ui.h"
 
 void time_init()
 {

@@ -27,17 +27,16 @@ extern "C" {
 // SCREEN: ui_Screen1
 void ui_Screen1_screen_init(void);
 extern lv_obj_t *ui_Screen1;
-extern lv_obj_t *ui_clock;
+extern lv_obj_t *ui_time;
 extern lv_obj_t *ui_date;
-void ui_event_logo( lv_event_t * e);
+void ui_event_logo_button( lv_event_t * e);
+extern lv_obj_t *ui_logo_button;
 extern lv_obj_t *ui_logo;
-extern lv_obj_t *ui_demo;
-extern lv_obj_t *ui_Slider2;
 extern lv_obj_t *ui____initial_actions0;
 
 LV_IMG_DECLARE( ui_img_sls_logo_png);   // assets/sls_logo.png
 
-LV_FONT_DECLARE( ui_font_clock_66);
+LV_FONT_DECLARE( ui_font_clock_60);
 
 void ui_init(void);
 
