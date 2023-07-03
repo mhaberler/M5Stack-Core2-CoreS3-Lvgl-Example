@@ -15,7 +15,7 @@
               {
                 "nid": -391186094,
                 "strtype": "OBJECT/Name",
-                "strval": "clock",
+                "strval": "time",
                 "InheritedType": 10
               },
               {
@@ -647,8 +647,8 @@
                 "flags": 17,
                 "strtype": "OBJECT/Position",
                 "intarray": [
-                  0,
-                  32
+                  -93,
+                  31
                 ],
                 "InheritedType": 7
               },
@@ -665,7 +665,7 @@
               {
                 "nid": -1433008821,
                 "strtype": "OBJECT/Align",
-                "strval": "CENTER",
+                "strval": "RIGHT_MID",
                 "InheritedType": 3
               },
               {
@@ -862,13 +862,13 @@
               {
                 "nid": 1897145696,
                 "strtype": "IMGBUTTON/Image_released",
-                "strval": "assets\\sls_logo.png",
+                "strval": "assets/sls_logo.png",
                 "InheritedType": 5
               },
               {
                 "nid": -254186211,
                 "strtype": "IMGBUTTON/Image_pressed",
-                "strval": "assets\\sls_logo.png",
+                "strval": "assets/sls_logo.png",
                 "InheritedType": 5
               },
               {
@@ -906,7 +906,7 @@
               {
                 "disabled": false,
                 "nid": -2136900519,
-                "strtype": "IMGBUTTON/EventHandler",
+                "strtype": "_event/EventHandler",
                 "strval": "PRESSED",
                 "childs": [
                   {
@@ -929,7 +929,7 @@
                   },
                   {
                     "nid": -299689959,
-                    "strtype": "_custom/action",
+                    "strtype": "_event/action",
                     "strval": "CALL FUNCTION",
                     "childs": [
                       {
@@ -967,7 +967,7 @@
                   },
                   {
                     "nid": -1242152361,
-                    "strtype": "_custom/action",
+                    "strtype": "_event/action",
                     "strval": "SET OPACITY",
                     "childs": [
                       {
@@ -1009,7 +1009,7 @@
               {
                 "disabled": false,
                 "nid": 1084341634,
-                "strtype": "IMGBUTTON/EventHandler",
+                "strtype": "_event/EventHandler",
                 "strval": "RELEASED",
                 "childs": [
                   {
@@ -1032,7 +1032,7 @@
                   },
                   {
                     "nid": -969866786,
-                    "strtype": "_custom/action",
+                    "strtype": "_event/action",
                     "strval": "SET OPACITY",
                     "childs": [
                       {
@@ -1576,10 +1576,11 @@
     "offset_x": 0,
     "offset_y": 0,
     "shape": "RECTANGLE",
+    "multilang": "DISABLE",
     "description": "",
     "board": "Arduino with TFT_eSPI",
     "board_version": "v1.0.1",
-    "editor_version": "1.2.3",
+    "editor_version": "1.3.0",
     "image": "",
     "force_export_images": false,
     "pointfilter": false,
@@ -1587,9 +1588,9 @@
     "theme_dark": false,
     "theme_color1": 5,
     "theme_color2": 0,
-    "exportFolderPath": "C:\\Projects\\01-Current\\LVGL\\M5Stack-Core2-Lvgl-Example\\src\\ui",
-    "projectExportFolderPath": "C:\\Projects\\01-Current\\LVGL\\M5Stack-Core2-Lvgl-Example\\ui_square_line\\export",
-    "backup_cnt": 10,
+    "exportFolderPath": "/Users/mah/Ballon/src/BalloonWare/graphics/squareline-esp32/src/m5stack/ui",
+    "projectExportFolderPath": "/Users/mah/Ballon/src/BalloonWare/graphics/squareline-esp32/squareline/projects/ui_square_line",
+    "backup_cnt": 13,
     "autosave_cnt": 0,
     "lvgl_version": "8.2.0",
     "callfuncsexport": "DONT_EXPORT",

@@ -1,0 +1,10 @@
+{
+    "files.associations": {
+        "*.mpy": "python",
+        "ui.h": "c",
+        "stdint.h": "c",
+        "lv_conf_internal.h": "c",
+        "ui_helpers.h": "c",
+        "lv_types.h": "c"
+    }
+}
